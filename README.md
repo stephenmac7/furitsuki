@@ -10,7 +10,11 @@ There are no command line arguments at the moment. Place sentences on stdin, and
 ➜
 ```
 
-To quit, just use the EOF character (Ctrl+D).
+To quit, just use the EOF character (Ctrl+D). Or, if you prefer, you can pipe in your input:
+```
+➜ echo "お寿司が食べたい。" | java -jar furitsuki-assembly-SNAPSHOT.jar 
+お 寿[す]司[し]が 食[た]べたい。
+```
 
 ### License
 jcore is licensed under the Apache License, Version 2.0. See LICENSE for details.
