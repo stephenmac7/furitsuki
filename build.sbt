@@ -1,9 +1,9 @@
-val jcore = "com.stephenmac7" % "jcore_2.11" % "0.1-SNAPSHOT"
+val jcore = "com.stephenmac7" % "jcore_2.12" % "0.1-SNAPSHOT"
 
 lazy val commonSettings = Seq(
   organization := "com.stephenmac7",
   version := "SNAPSHOT",
-  scalaVersion := "2.11.7",
+  scalaVersion := "2.12.6",
   publishMavenStyle := true
 )
 
