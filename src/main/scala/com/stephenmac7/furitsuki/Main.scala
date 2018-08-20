@@ -16,18 +16,21 @@
 
 package com.stephenmac7.furitsuki
 
-import com.stephenmac7.jcore.{UnidicImporter,Furigana}
+import com.stephenmac7.jcore.UnidicImporter
+import com.stephenmac7.jcore.furigana
+
 import scala.io.StdIn
 
 object Main {
   // invoke via `sbt "run -FLAGS"` (quotes important!)
   def main(args: Array[String]) = {
+    furigana.dict // force evaluation of lazy variable
     var in = "";
     while (in != null) {
       in = StdIn.readLine()
       if (in != null) {
         val sentence = UnidicImporter.toSentence(in)
-        println(Furigana.fromSentence(sentence))
+        println(furigana.fromSentence(sentence))
       }
     }
   }
